@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -23,7 +24,7 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-button navigation-button-page-search" href="#">
+            <a class="navigation-link navigation-link-page-search" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
@@ -33,17 +34,20 @@
             </a>
           </li>
           <li class="navigation-item">
-            <button class="navigation-button navigation-button-hotels-search" type="button">Хочу сюда!</button>
+            <button class="navigation-button-hotels-search" type="button">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-index">
-      <img class="background-index-img" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" src="#">
-      <section class="reason-items">
-        <h1 class="visually-hidden">Преимущества Седоны</h1>
-        <p class="reason-item">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p class="reason-item">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <div class="background-index">
+          <img class="background-index-img" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" src="images/welcome.svg" width="458" height="352">
+          <img class="background-index-img" alt="Белая полоса с выступами" src="images/strip-preview.svg" width="1200" height="57">
+        </div>
+        <section class="reason-items">
+          <h1 class="visually-hidden">Преимущества Седоны</h1>
+          <p class="reason-item">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="reason-item">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
       <section class="advantages-items">
         <h2 class="visually-hidden">Причины, по которым выбирают Седону</h2>
@@ -97,16 +101,18 @@
       <div class="search-hotels">
         <h2 class="search-hotels-title">Заинтересовались?</h2>
         <p class="search-hotels-subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="navigation-button-hotels-search search-hotels-button" type="button">Поиск гостиницы в седоне</button>
+        <button class="search-hotels-button" type="button">Поиск гостиницы в седоне</button>
       </div>
       <article class="subscribe">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="subscribe-email">Email</label>
-          <input required type="email" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-mail">
-          <button class="subscribe-button" type="submit">Подписаться</button>
-        </form>
+        <div class="subscribe-items">
+          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+          <p class="subscribe-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="subscribe-email">Email</label>
+            <input required type="email" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-mail">
+            <button class="subscribe-button" type="submit">Подписаться</button>
+          </form>
+        </div>
       </article>
       <footer class="page-footer">
         <ul class="contacts-social-list" aria-label="Социальные сети">

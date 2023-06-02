@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -23,7 +24,7 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-button navigation-button-page-search" href="#">
+            <a class="navigation-link navigation-link-page-search" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
@@ -33,7 +34,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <button class="navigation-button navigation-button-hotels-search" type="button">Хочу сюда!</button>
+            <button class="navigation-button-hotels-search" type="button">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
@@ -112,7 +113,7 @@
         </form>
       </section>
       <section class="hotels-find">
-        <h2 class="hotels-find-title">Найдено гостиниц: 38</h2>
+        <h2 class="hotels-find-title">Найдено гостиниц: <span class="hotels-find-nubmer">38</span></h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
@@ -149,8 +150,12 @@
               <p class="hotels-card-price">От 4000 ₽</p>
               <a class="hotels-card-link" href="#">Подробнее</a>
               <button class="hotels-sedona-card-button" type="button">В избранное</button>
-              <span class="visually-hidden">4-х звездочный отель</span>
-              <p class="rating-value">Рейтинг: 8,5</p>
+              <div class="hotels-sedona-stars-count" role="img" aria-label="4 звезды">
+                <span class="visually-hidden">4-х звездочный отель</span>
+              </div>
+              <div class="rating-value-items">
+                <p class="rating-value">Рейтинг: 8,5</p>
+              </div>
             </li>
             <li class="hotels-card-item">
               <a class="hotels-card-img" href="#">
@@ -163,8 +168,12 @@
               <p class="hotels-card-price">От 5000 ₽</p>
               <a class="hotels-card-link" href="#">Подробнее</a>
               <button class="hotels-sedona-card-button hotels-sedona-card-button-current" type="button">В избранном</button>
-              <span class="visually-hidden">4-х звездочный отель</span>
-              <p class="rating-value">Рейтинг: 9,2</p>
+              <div class="hotels-sedona-stars-count" role="img" aria-label="4 звезды">
+                <span class="visually-hidden">4-х звездочный отель</span>
+              </div>
+              <div class="rating-value-items">
+                <p class="rating-value">Рейтинг: 9,2</p>
+              </div>
             </li>
             <li class="hotels-card-item">
               <a class="hotels-card-img" href="#">
@@ -177,8 +186,12 @@
               <p class="hotels-card-price">От 2500 ₽</p>
               <a class="hotels-card-link" href="#">Подробнее</a>
               <button class="hotels-sedona-card-button" type="button">В избранное</button>
-              <span class="visually-hidden">3-х звездочный отель</span>
-              <p class="rating-value">Рейтинг: 6,9</p>
+              <div class="hotels-sedona-stars-count" role="img" aria-label="3 звезды">
+                <span class="visually-hidden">3-х звездочный отель</span>
+              </div>
+              <div class="rating-value-items">
+                <p class="rating-value">Рейтинг: 6,9</p>
+              </div>
             </li>
             <li class="hotels-card-item">
               <a class="hotels-card-img" href="#">
@@ -191,8 +204,12 @@
               <p class="hotels-card-price">От 1500 ₽</p>
               <a class="hotels-card-link" href="#">Подробнее</a>
               <button class="hotels-sedona-card-button" type="button">В избранное</button>
-              <span class="visually-hidden">2-х звездочный отель</span>
-              <p class="rating-value">Рейтинг: 5,0</p>
+              <div class="hotels-sedona-stars-count" role="img" aria-label="2 звезды">
+                <span class="visually-hidden">2-х звездочный отель</span>
+              </div>
+              <div class="rating-value-items">
+                <p class="rating-value">Рейтинг: 5,0</p>
+              </div>
             </li>
           </ul>
           <h2 class="visually-hidden">Пагинация</h2>
@@ -220,13 +237,15 @@
       </section>
     </main>
     <article class="subscribe">
-      <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-      <p class="subscribe-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label for="subscribe-email">Email</label>
-        <input type="email" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-mail">
-        <button class="subscribe-button" type="submit">Подписаться</button>
-      </form>
+      <div class="subscribe-items">
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="subscribe-email">Email</label>
+          <input required type="email" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-mail">
+          <button class="subscribe-button" type="submit">Подписаться</button>
+        </form>
+      </div>
     </article>
     <footer class="page-footer">
       <ul class="contacts-social-list" aria-label="Социальные сети">
