@@ -8,7 +8,7 @@
     <header class="page-header">
       <nav class="navigation">
         <a class="page-header-logo-link" href="index.html">
-          <img class="page-header-logo" alt="Логотип сайта по поиску гостиницы в Седоне" src="#">
+          <img class="page-header-logo" alt="Логотип сайта по поиску гостиницы в Седоне" src="images/logo.svg" width="140"  height="70">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -23,9 +23,9 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <button class="navigation-button navigation-button-page-search" type="button">
+            <a class="navigation-button navigation-button-page-search" href="#">
               <span class="visually-hidden">Поиск</span>
-            </button>
+            </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
@@ -111,29 +111,37 @@
           <button class="hotels-sedona-filter-button" type="reset">Сбросить</button>
         </form>
       </section>
-      <section class="hotels-found">
-        <h2 class="hotels-found-title">Найдено гостиниц: 38</h2>
+      <section class="hotels-find">
+        <h2 class="hotels-find-title">Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
-        <ul class="hotels-found-list">
-          <li class="hotels-found-list-item">
-            <a class="hotels-found-list-link hotels-found-list-link-current" href="#">Расположение карточек гостиниц в 3 ряда</a>
+        <ul class="hotels-find-list">
+          <li class="hotels-find-list-item">
+            <button class="hotels-find-list-link hotels-find-list-link-current" type="button" aria-label="Расположение карточек гостиниц плиткой">
+              <img class="hotels-find-list-img" src="#" alt="Иконка плиточек для расположения карточек гостиниц">
+            </button>
           </li>
-          <li class="hotels-found-list-item">
-            <a class="hotels-found-list-link" href="#">Расположение карточек гостиниц в 1 ряд</a>
+          <li class="hotels-find-list-item">
+            <button class="hotels-find-list-link" type="button" aria-label="Расположение карточек гостиниц на весь экран">
+              <img class="hotels-find-list-img" src="#" alt="Иконка на весь экран для расположения карточек гостиниц">
+            </button>
           </li>
-          <li class="hotels-found-list-item">
-            <a class="hotels-found-list-link" href="#">Расположение карточек гостиниц списком</a>
+          <li class="hotels-find-list-item">
+            <button class="hotels-find-list-link" type="button" aria-label="Расположение карточек гостиниц списком">
+              <img class="hotels-find-list-img" src="#" alt="Иконка списка для расположения карточек гостиниц">
+            </button>
           </li>
         </ul>
         <div class="hotels-card">
-          <h2 class="visually-hidden">Карточки гостиниц</h2>
+          <h2 class="visually-hidden">Карточки найденных гостиниц</h2>
           <ul class="hotels-card-list">
             <li class="hotels-card-item">
-              <img class="hotels-card-img" alt="Вид из пещеры на звездное небо" src="#">
+              <a class="hotels-card-img" href="#">
+                <img class="hotels-card-img" alt="Вид из пещеры на звездное небо" src="images/catalog-hotels/hotel-1.jpg" width="300" height="212">
+              </a>
               <a class="hotels-card-title-link" href="#">
                 <h3 class="hotels-card-title">Amara Resort & Spa</h3>
               </a>
@@ -145,7 +153,9 @@
               <p class="rating-value">Рейтинг: 8,5</p>
             </li>
             <li class="hotels-card-item">
-              <img class="hotels-card-img" alt="Вид на горы, небо и радугу" src="#">
+              <a class="hotels-card-img" href="#">
+                <img class="hotels-card-img" alt="Вид на горы, небо и радугу" src="images/catalog-hotels/hotel-2.jpg" width="300" height="212">
+              </a>
               <a class="hotels-card-title-link" href="#">
                 <h3 class="hotels-card-title">Villas at Poco Diablo</h3>
               </a>
@@ -157,7 +167,9 @@
               <p class="rating-value">Рейтинг: 9,2</p>
             </li>
             <li class="hotels-card-item">
-              <img class="hotels-card-img" alt="Вид на лес и горы" src="#">
+              <a class="hotels-card-img" href="#">
+                <img class="hotels-card-img" alt="Вид на лес и горы" src="images/catalog-hotels/hotel-3.jpg" width="300" height="212">
+              </a>
               <a class="hotels-card-title-link" href="#">
                 <h3 class="hotels-card-title">Desert Quail Inn</h3>
               </a>
@@ -169,7 +181,9 @@
               <p class="rating-value">Рейтинг: 6,9</p>
             </li>
             <li class="hotels-card-item">
-              <img class="hotels-card-img" alt="Вид на гору и звездное небо" src="#">
+              <a class="hotels-card-img" href="#">
+                <img class="hotels-card-img" alt="Вид на гору и звездное небо" src="images/catalog-hotels/hotel-4.jpg" width="300" height="212">
+              </a>
               <a class="hotels-card-title-link" href="#">
                 <h3 class="hotels-card-title">GreenTree Inn</h3>
               </a>
