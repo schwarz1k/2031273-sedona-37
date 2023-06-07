@@ -22,7 +22,7 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-user">
           <li class="navigation-item">
             <a class="navigation-link navigation-link-page-search" href="#">
               <span class="visually-hidden">Поиск</span>
@@ -39,16 +39,18 @@
         </ul>
       </nav>
     </header>
-    <main class="main-index">
+    <main class="main-containter main-index">
         <div class="background-index">
           <img class="background-index-img" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" src="images/welcome.svg" width="458" height="352">
           <img class="background-index-img" alt="Белая полоса с выступами" src="images/strip-preview.svg" width="1200" height="57">
         </div>
         <section class="reason-items">
-          <h1 class="visually-hidden">Преимущества Седоны</h1>
-          <p class="reason-item">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p class="reason-item">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-      </section>
+          <div class="reson-items-containter">
+            <h1 class="visually-hidden">Преимущества Седоны</h1>
+            <p class="reason-item">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+            <p class="reason-item">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
+        </section>
       <section class="advantages-items">
         <h2 class="visually-hidden">Причины, по которым выбирают Седону</h2>
         <ul class="advantages-items-list">
@@ -97,13 +99,12 @@
             <p class="more-reason-item-subtitle">Не только китайского, но и настоящего местного производства!</p>
         </ul>
       </section>
-      </main>
-      <div class="search-hotels">
+      <section class="search-hotels">
         <h2 class="search-hotels-title">Заинтересовались?</h2>
         <p class="search-hotels-subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="search-hotels-button" type="button">Поиск гостиницы в седоне</button>
-      </div>
-      <article class="subscribe">
+      </section>
+      <div class="subscribe">
         <div class="subscribe-items">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -113,7 +114,8 @@
             <button class="subscribe-button" type="submit">Подписаться</button>
           </form>
         </div>
-      </article>
+      </div>
+      </main>
       <footer class="page-footer">
         <ul class="contacts-social-list" aria-label="Социальные сети">
           <li class="social-item">

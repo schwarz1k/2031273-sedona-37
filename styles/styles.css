@@ -13,7 +13,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -30,6 +38,45 @@ button {
 ul, ol {
   list-style-type: none;
   padding: 0;
+}
+
+/* Скрыл блоки с классом visually-hidden, пока так */
+.visually-hidden {
+  display: none;
+}
+/* Скрыл блоки с классом visually-hidden, пока так */
+.page-header {
+  background-color: #FFFFFF;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation {
+  width: 1200px;
+  display: flex;
+  justify-content: start;
+  margin: 0 auto;
+}
+
+.page-header-logo-link {
+  margin-left: 70px;
+  margin-right: 44px;
+}
+
+.page-header-logo-link img {
+  display: block;
+}
+
+.navigation-list {
+  width: 339px;
+  margin: 0;
+  margin-right: auto;
+}
+
+.navigation-user {
+  margin: 0;
+  margin-right: 70px;
+  width: 268px;
 }
 
 .navigation-link {
@@ -52,6 +99,15 @@ ul, ol {
 }
 
 /* Main index */
+.main-containter {
+  flex-grow: 1;
+}
+
+.main-index {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
 
 .background-index {
   width: 1200px;
@@ -67,6 +123,7 @@ ul, ol {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: block;
 }
 
 .background-index-img:last-child {
@@ -74,7 +131,18 @@ ul, ol {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  display: block;
 }
+
+.reason-items {
+  margin: 0;
+}
+
+.reson-items-containter {
+  width: 651px;
+  margin: 69px 275px;
+}
+
 
 .reason-item {
   font-weight: 700;
@@ -86,11 +154,13 @@ ul, ol {
 .reason-item:last-child {
   text-transform: none;
   font-size: 22px;
-  line-height: 26px
+  line-height: 26px;
+  font-weight: 400;
 }
 
 .advantages-item-list {
   background-color: #82B3D3;
+  margin: 0 auto;
 }
 
 .advantages-item-list:nth-child(2) {
@@ -232,6 +302,10 @@ ul, ol {
   border: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
+}
+
+.page-footer {
+  background-color: #FFFFFF;
 }
 
 .contacts-phone {
