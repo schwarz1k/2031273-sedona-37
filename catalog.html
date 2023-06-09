@@ -41,101 +41,107 @@
     </header>
     <main class="main-containter main-catalog">
       <section class="hotels-sedona">
-        <h1 class="hotels-sedona-title">Гостиницы Седоны</h1>
-        <ol class="breadcrumbs-list-items">
-          <li class="breadcrumbs-item">
-            <span class="visually-hidden">Главная</span>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="#" aria-current="page">Гостиницы</a>
-          </li>
-        </ol>
-        <form class="hotels-sedona-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="hotels-sedona-filter-group">
-            <legend class="hotels-sedona-filter-title">Инфраструктура:</legend>
-            <ul class="hotels-sedona-filter-list">
-              <li class="hotels-sedona-filter-item">
-                <label class="control">
-                    <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                    Бассейн
-                </label>
-              </li>
-              <li class="hotels-sedona-filter-item">
-                <label class="control">
-                    <input class="control-input" type="checkbox" name="parking" checked>
-                    Парковка
-                </label>
-              </li>
-              <li class="hotels-sedona-filter-item">
-                <label class="control">
-                    <input class="control-input" type="checkbox" name="wi-Fi">
-                    Wi-Fi
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="hotels-sedona-filter-group">
-          <legend class="hotels-sedona-filter-title">Тип жилья:</legend>
-            <ul class="hotels-sedona-filter-list">
-              <li class="hotels-sedona-filter-item">
-                <label class="control">
-                    <input class="control-input" type="radio" name="housing" value="Hotel" checked>
-                    Гостиница
-                </label>
-              </li>
-              <li class="hotels-sedona-filter-item">
-                <label class="control">
-                    <input class="control-input" type="radio" name="housing" value="Motel">
-                    Мотель
-                </label>
-              </li>
-              <li class="hotels-sedona-filter-item">
-                <label class="control">
-                    <input class="control-input" type="radio" name="housing" value="Apartment">
-                    Апартаменты
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="hotels-sedona-filter-group">
-            <legend class="hotels-sedona-filter-title">Стоимость, ₽:</legend>
-            <label class="visually-hidden" for="hotels-sedona-filter-price-from">От</label>
-            <input class="control-input" type="number" name="price-from" id="hotels-sedona-filter-price-from" min="0" value="0">
-            <label class="visually-hidden" for="hotels-sedona-filter-price-to">До</label>
-            <input class="control-input" type="number" name="price-to" id="hotels-sedona-filter-price-to" max="9000" value="9000">
-            <div class="hotels-sedona-slider-">
-              <span class="visually-hidden">Ползунок для изменения цены</span>
-              <input class="slider-input" type="range" min="0" max="100" value="80" id="hotels-sedona-filter-slider">
+        <div class="hotels-sedona-container">
+          <h1 class="hotels-sedona-title">Гостиницы Седоны</h1>
+          <ol class="breadcrumbs-list-items">
+            <li class="breadcrumbs-item">
+              <span class="visually-hidden">Главная</span>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="#" aria-current="page">Гостиницы</a>
+            </li>
+          </ol>
+          <form class="hotels-sedona-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="hotels-sedona-filter-group hotels-sedona-filter-infrastructure">
+              <legend class="hotels-sedona-filter-title">Инфраструктура:</legend>
+              <ul class="hotels-sedona-filter-list">
+                <li class="hotels-sedona-filter-item">
+                  <label class="control">
+                      <input class="control-input" type="checkbox" name="swimming-pool" checked>
+                      Бассейн
+                  </label>
+                </li>
+                <li class="hotels-sedona-filter-item">
+                  <label class="control">
+                      <input class="control-input" type="checkbox" name="parking" checked>
+                      Парковка
+                  </label>
+                </li>
+                <li class="hotels-sedona-filter-item">
+                  <label class="control">
+                      <input class="control-input" type="checkbox" name="wi-Fi">
+                      Wi-Fi
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="hotels-sedona-filter-group hotels-sedona-filter-type-house">
+            <legend class="hotels-sedona-filter-title">Тип жилья:</legend>
+              <ul class="hotels-sedona-filter-list">
+                <li class="hotels-sedona-filter-item">
+                  <label class="control">
+                      <input class="control-input" type="radio" name="housing" value="Hotel" checked>
+                      Гостиница
+                  </label>
+                </li>
+                <li class="hotels-sedona-filter-item">
+                  <label class="control">
+                      <input class="control-input" type="radio" name="housing" value="Motel">
+                      Мотель
+                  </label>
+                </li>
+                <li class="hotels-sedona-filter-item">
+                  <label class="control">
+                      <input class="control-input" type="radio" name="housing" value="Apartment">
+                      Апартаменты
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="hotels-sedona-filter-group hotels-sedona-filter-type-price">
+              <legend class="hotels-sedona-filter-title">Стоимость, ₽:</legend>
+              <label class="visually-hidden" for="hotels-sedona-filter-price-from">От</label>
+              <input class="control-input" type="number" name="price-from" id="hotels-sedona-filter-price-from" min="0" value="0">
+              <label class="visually-hidden" for="hotels-sedona-filter-price-to">До</label>
+              <input class="control-input" type="number" name="price-to" id="hotels-sedona-filter-price-to" max="9000" value="9000">
+              <div class="hotels-sedona-slider-">
+                <span class="visually-hidden">Ползунок для изменения цены</span>
+                <input class="slider-input" type="range" min="0" max="100" value="80" id="hotels-sedona-filter-slider">
+              </div>
+            </fieldset>
+            <div class="hotels-sedona-filter-button-container">
+              <button class="hotels-sedona-filter-button" type="submit">Применить</button>
+              <button class="hotels-sedona-filter-button" type="reset">Сбросить</button>
             </div>
-          </fieldset>
-          <button class="hotels-sedona-filter-button" type="submit">Применить</button>
-          <button class="hotels-sedona-filter-button" type="reset">Сбросить</button>
-        </form>
+          </form>
+        </div>
       </section>
       <section class="hotels-find">
-        <h2 class="hotels-find-title">Найдено гостиниц: <span class="hotels-find-nubmer">38</span></h2>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешевые</option>
-          <option value="expensive">Сначала дорогие</option>
-          <option value="popular">Сначала популярные</option>
-        </select>
-        <ul class="hotels-find-list">
-          <li class="hotels-find-list-item">
-            <button class="hotels-find-list-link hotels-find-list-link-current" type="button" aria-label="Расположение карточек гостиниц плиткой">
-              <img class="hotels-find-list-img" src="#" alt="Иконка плиточек для расположения карточек гостиниц">
-            </button>
-          </li>
-          <li class="hotels-find-list-item">
-            <button class="hotels-find-list-link" type="button" aria-label="Расположение карточек гостиниц на весь экран">
-              <img class="hotels-find-list-img" src="#" alt="Иконка на весь экран для расположения карточек гостиниц">
-            </button>
-          </li>
-          <li class="hotels-find-list-item">
-            <button class="hotels-find-list-link" type="button" aria-label="Расположение карточек гостиниц списком">
-              <img class="hotels-find-list-img" src="#" alt="Иконка списка для расположения карточек гостиниц">
-            </button>
-          </li>
-        </ul>
+        <div class="hotels-find-sorting">
+          <h2 class="hotels-find-title">Найдено гостиниц: <span class="hotels-find-nubmer">38</span></h2>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+            <option value="popular">Сначала популярные</option>
+          </select>
+          <ul class="hotels-find-list">
+            <li class="hotels-find-list-item">
+              <button class="hotels-find-list-link hotels-find-list-link-current" type="button" aria-label="Расположение карточек гостиниц плиткой">
+                <img class="hotels-find-list-img" src="#" alt="Иконка плиточек для расположения карточек гостиниц">
+              </button>
+            </li>
+            <li class="hotels-find-list-item">
+              <button class="hotels-find-list-link" type="button" aria-label="Расположение карточек гостиниц на весь экран">
+                <img class="hotels-find-list-img" src="#" alt="Иконка на весь экран для расположения карточек гостиниц">
+              </button>
+            </li>
+            <li class="hotels-find-list-item">
+              <button class="hotels-find-list-link" type="button" aria-label="Расположение карточек гостиниц списком">
+                <img class="hotels-find-list-img" src="#" alt="Иконка списка для расположения карточек гостиниц">
+              </button>
+            </li>
+          </ul>
+        </div>
         <div class="hotels-card">
           <h2 class="visually-hidden">Карточки найденных гостиниц</h2>
           <ul class="hotels-card-list">

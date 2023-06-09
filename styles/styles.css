@@ -412,6 +412,14 @@ ul, ol {
   margin: 0 auto;
 }
 
+.hotels-sedona-container {
+  width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .hotels-sedona-title {
   font-weight: 700;
   font-size: 60px;
@@ -424,6 +432,23 @@ ul, ol {
   line-height: 21px;
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.hotels-sedona-filter {
+  display: flex;
+  width: 1060px;
+}
+
+.hotels-sedona-filter-infrastructure, .hotels-sedona-filter-type-house{
+  width: 150px;
+}
+
+.hotels-sedona-filter-type-price {
+  width: 288px;
+}
+
+.hotels-sedona-filter-button-container {
+ width: 191px;
 }
 
 .hotels-sedona-filter-title {
@@ -465,6 +490,11 @@ ul, ol {
   background-color: #FFFFFF;
 }
 
+.hotels-find-sorting {
+  width: 1060px;
+  margin: auto;
+}
+
 .hotels-find-title {
   margin: 0;
   font-weight: 700;
@@ -480,6 +510,11 @@ ul, ol {
   border-radius: 4px;
   color: #333333;
   cursor: pointer;
+}
+
+.hotels-card {
+  width: 1060px;
+  margin: 0 auto;
 }
 
 .hotels-card-title-link {
