@@ -382,6 +382,9 @@ ul, ol {
 
 .contacts-social-list {
   width: 142px;
+  display: flex;
+  margin: 0;
+  margin-left: 70px;
 }
 
 .contacts-phone {
@@ -390,10 +393,13 @@ ul, ol {
   line-height: 40px;
   color: #000000;
   text-decoration: none;
+  margin: 0;
 }
 
 .contacts-logo-link {
   width: 115px;
+  margin: 0;
+  margin-right: 70px;
 }
 
 /* Main catalog */
