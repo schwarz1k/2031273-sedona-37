@@ -162,6 +162,7 @@ ul, ol {
 .advantages-items-list {
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 .advantages-items-list img {
@@ -186,6 +187,7 @@ ul, ol {
 .advantages-list-cards {
   background-color: rgba(131, 179, 211, 0.12);
   display: flex;
+  margin: auto;
 }
 
 .advantages-list-cards .advantages-item-list {
