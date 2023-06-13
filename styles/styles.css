@@ -88,8 +88,7 @@ ul, ol {
 }
 
 .navigation-button-hotels-search {
-  width: 160px;
-  height: 36px;
+  padding: 8px 28px;
   color: #FFFFFF;
   text-transform: uppercase;
   background-color: #756157;
@@ -115,6 +114,7 @@ ul, ol {
   background-image: url("../images/background-preview.jpg");
   background-size: cover;
   background-position: center;
+  background-color: rgba(11, 107, 136, 0.726);
   position: relative;
 }
 
@@ -308,8 +308,7 @@ ul, ol {
 }
 
 .search-hotels-button {
-  width: 376px;
-  height: 52px;
+  padding: 8px 61px;
   color: #FFFFFF;
   text-transform: uppercase;
   background-color: #756157;
@@ -324,6 +323,7 @@ ul, ol {
   height: 414px;
   background-image: url("../images/background-subscribe.jpg");
   background-size: cover;
+  background-color: rgba(11, 107, 136, 0.726);
   position: relative;
 }
 
@@ -358,8 +358,7 @@ ul, ol {
 }
 
 .subscribe-button {
-  width: 232px;
-  height: 52px;
+  padding: 16px 54px;
   color: #FFFFFF;
   text-transform: uppercase;
   background-color: #82B3D3;
@@ -415,6 +414,7 @@ ul, ol {
   /* height: 412px; */
   background-image: url("../images/background-catalog.jpg");
   background-size: cover;
+  background-color: rgba(11, 107, 136, 0.726);
   position: relative;
   color: #FFFFFF;
   margin: 0 auto;
@@ -475,8 +475,7 @@ ul, ol {
 }
 
 .hotels-sedona-filter-button {
-  width: 191px;
-  height: 36px;
+  padding: 8px 44px;
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #82B3D3;
@@ -489,6 +488,7 @@ ul, ol {
 }
 
 .hotels-sedona-filter-button:last-child {
+  padding: 8px 50px;
   background: transparent;
 }
 
@@ -538,8 +538,6 @@ ul, ol {
 }
 
 .hotels-card-link {
-  width: 88px;
-  height: 20px;
   padding: 8px 26px;
   font-weight: 700;
   font-size: 16px;
@@ -552,8 +550,7 @@ ul, ol {
 }
 
 .hotels-sedona-card-button {
-  width: 140px;
-  height: 36px;
+  padding: 8px 12px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -565,45 +562,22 @@ ul, ol {
   cursor: pointer;
 }
 
-.rating-value-items {
-  width: 140px;
-  height: 37px;
-  background-color: #F2F2F2;
-  border-radius: 4px;
-  display: flex;
+.hotels-sedona-card-button-current {
+  background-color: #7DB54F;
 }
 
 .rating-value {
+  padding: 9px 23px;
   color: #333333;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
   margin: auto;
-}
-
-.pagination-item {
-  background-color: #82B3D3;
-  border-radius: 4px;
-  width: 60px;
-  height: 60px;
-  display: flex;
-}
-
-.pagination-item:first-child {
   background-color: #F2F2F2;
+  border-radius: 4px;
 }
 
-.pagination-link {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  color: #FFFFFF;
-  text-decoration: none;
-  margin: auto;
-}
+/* Cтилизовать пагинацию */
 
-.pagination-current {
-  color: #000000;
-}
-
+/* Cтилизовать пагинацию */
 /* Main catalog */
