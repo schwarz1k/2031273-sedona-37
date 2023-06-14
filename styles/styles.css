@@ -109,50 +109,30 @@ ul, ol {
 }
 
 .background-index {
-  width: 1200px;
-  height: 485px;
   background-image: url("../images/background-preview.jpg");
   background-size: cover;
   background-position: center;
   background-color: rgba(11, 107, 136, 0.726);
-  position: relative;
-}
-
-.background-index-img:first-child {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: block;
-}
-
-.background-index-img:last-child {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  display: block;
+  text-align: center;
+  padding: 50px 371px 79px;
 }
 
 .reason-items {
-  margin: 0;
-}
-
-.reason-items-containter {
   width: 650px;
   margin: auto;
   padding: 69px 275px;
+  text-align: center;
 }
 
 
-.reason-item {
+.reason-item-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
-.reason-item:last-child {
+.reason-item-subtitle {
   text-transform: none;
   font-size: 22px;
   line-height: 26px;
@@ -237,23 +217,20 @@ ul, ol {
 }
 
 .holiday-items {
-  margin: 0;
-}
-
-.holiday-items-container {
   width: 505px;
   margin: auto;
   padding: 64px 348px;
+  text-align: center;
 }
 
-.holiday-item {
+.holiday-item-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
-.holiday-item:last-child {
+.holiday-item-subtitle {
   font-size: 22px;
   line-height: 26px;
   text-transform: none;
@@ -287,9 +264,8 @@ ul, ol {
 }
 
 .search-hotels-container {
-  width: 592px;
   margin: auto;
-  padding: 96px 304px;
+  padding: 94px 304px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -319,22 +295,11 @@ ul, ol {
 }
 
 .subscribe {
-  width: 1200px;
-  height: 414px;
   background-image: url("../images/background-subscribe.jpg");
   background-size: cover;
   background-color: rgba(11, 107, 136, 0.726);
-  position: relative;
-}
-
-.subscribe-items {
-  width: 684px;
-  height: 214px;
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding: 73px 258px 73px 258px;
 }
 
 .subscribe-title {
@@ -348,7 +313,6 @@ ul, ol {
 .subscribe-subtitle {
   color: #FFFFFF;
   font-size: 22px;
-  font-weight: 400;
   line-height: 26px;
 }
 
@@ -472,6 +436,16 @@ ul, ol {
 .control-input {
   font-weight: 700;
   line-height: 24px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
 }
 
 .hotels-sedona-filter-button {

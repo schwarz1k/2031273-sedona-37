@@ -42,14 +42,11 @@
     <main class="main-containter main-index">
         <div class="background-index">
           <img class="background-index-img" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" src="images/welcome.svg" width="458" height="352">
-          <img class="background-index-img" alt="Белая полоса с выступами" src="images/strip-preview.svg" width="1200" height="57">
         </div>
         <section class="reason-items">
-          <div class="reason-items-containter">
             <h1 class="visually-hidden">Преимущества Седоны</h1>
-            <p class="reason-item">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-            <p class="reason-item">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-          </div>
+            <p class="reason-item-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+            <p class="reason-item-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
       <section class="advantages-items">
         <h2 class="visually-hidden">Причины, по которым выбирают Седону</h2>
@@ -89,8 +86,8 @@
       <section class="holiday-items">
           <div class="holiday-items-container">
             <h2 class="visually-hidden">Отдых в Седоне</h2>
-            <p class="holiday-item">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-            <p class="holiday-item">Опытный персонал и качественное обслуживание!</p>
+            <p class="holiday-item-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+            <p class="holiday-item-subtitle">Опытный персонал и качественное обслуживание!</p>
         </div>
       </section>
       <section class="more-reason-items">
@@ -117,15 +114,16 @@
         </div>
       </section>
       <div class="subscribe">
-        <div class="subscribe-items">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="subscribe-email">Email</label>
-            <input required type="email" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-mail">
+            <!-- Правильно ли я сверстал рассылку? -->
+            <label for="subscribe-email">
+              <input required type="email" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-mail">
+            </label>
+            <!-- Правильно ли я сверстал рассылку? -->
             <button class="subscribe-button" type="submit">Подписаться</button>
           </form>
-        </div>
       </div>
       </main>
       <footer class="page-footer">
