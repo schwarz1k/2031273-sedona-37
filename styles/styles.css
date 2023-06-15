@@ -128,7 +128,8 @@ ul, ol {
 .reason-items {
   width: 650px;
   margin: auto;
-  padding: 69px 275px;
+  padding: 28px 275px;
+  padding-bottom: 27px;
   text-align: center;
 }
 
@@ -225,9 +226,9 @@ ul, ol {
 }
 
 .holiday-items {
-  width: 505px;
-  margin: auto;
-  padding: 64px 348px;
+  width: 504px;
+  margin: 0;
+  padding: 33px 348px;
   text-align: center;
 }
 
@@ -268,14 +269,10 @@ ul, ol {
 }
 
 .search-hotels {
-  display: flex;
-}
-
-.search-hotels-container {
+  width: 592px;
   margin: auto;
-  padding: 94px 304px;
-  display: flex;
-  flex-direction: column;
+  padding: 105px 304px;
+  padding-bottom: 106px;
   text-align: center;
 }
 
