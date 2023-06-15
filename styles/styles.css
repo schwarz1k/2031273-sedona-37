@@ -135,6 +135,7 @@ ul, ol {
 
 
 .reason-item-title {
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -234,6 +235,7 @@ ul, ol {
 }
 
 .holiday-item-title {
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
