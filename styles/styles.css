@@ -146,30 +146,24 @@ ul, ol {
   line-height: 26px;
   font-weight: 400;
 }
+/*  */
 
 .advantages-items-list {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 385px);
-  margin: 0;
-  text-align: center;
-}
-
-.advantages-items-list span {
-  display: block;
-}
-
-.advantages-list-real-city-img,
-.advantages-list-bridge-devil-img {
-  grid-column: span 2;
-}
-
-.advantages-item-list {
-  padding: 85px 85px;
 }
 
 .advantages-item-list {
   background-color: rgba(131, 179, 211, 0.12);
+  place-items: center;
+  text-align: center;
+}
+
+.advantages-items-list span {
+  display: inline-block;
 }
 
 .advantages-beautiful-road-list {
@@ -178,23 +172,28 @@ ul, ol {
 
 .advantages-list-real-city,
 .advantages-list-bridge-devil {
-  background-color: #82B3D3;
+  display: grid;
+  grid-column: 1 / -1;
+  background-color: rgba(130, 179, 211, 1);
   color: white;
 }
 
-.advantages-item-title {
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 62px;
+.advantages-item-img {
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
 
+.advantages-item-title,
 .advantages-item-subtitle {
   margin: 0;
-  width: 230px;
 }
 
+.advantages-item-title {
+  margin-bottom: 62px;
+  text-transform: uppercase;
+}
+
+/*  */
 
 .holiday-items {
   width: 504px;
@@ -231,7 +230,7 @@ ul, ol {
 .more-reason-items-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 385px);
+  grid-template-rows: repeat(3, auto);
   margin: 0;
 }
 
