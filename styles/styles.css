@@ -130,7 +130,6 @@ ul, ol {
   margin: auto;
   padding: 28px 275px;
   padding-bottom: 27px;
-  text-align: center;
 }
 
 
@@ -149,83 +148,49 @@ ul, ol {
 }
 
 .advantages-items-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 385px);
   margin: 0;
-}
-
-.advantages-items-list img {
-  display: block;
-}
-
-.advantages-item-real-city {
-  display: flex;
-}
-
-.advantages-real-city {
-  width: 400px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 85px 102px;
   text-align: center;
 }
 
-.advantages-item-real-city, .advantages-item-bridge-devil {
-  background-color: #82B3D3;
+.advantages-list-real-city-img,
+.advantages-list-bridge-devil-img {
+  grid-column: span 2;
 }
 
-.advantages-list-cards {
+.advantages-item-list {
+  padding: 85px 85px;
+}
+
+.advantages-item-list {
   background-color: rgba(131, 179, 211, 0.12);
-  display: flex;
-  margin: auto;
 }
 
-.advantages-list-cards .advantages-item-list {
-  width: 400px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 85px 102px;
-  text-align: center;
-}
-
-.advantages-card-beautiful-road {
+.advantages-beautiful-road-list {
   background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-list-real-city,
+.advantages-list-bridge-devil {
+  background-color: #82B3D3;
+  color: white;
 }
 
 .advantages-item-title {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 62px;
 }
 
 .advantages-item-subtitle {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #FFFFFF;
+  margin: 0;
+  width: 230px;
 }
 
-.advantages-list-cards .advantages-item-list .advantages-item-title {
-  color: #000000;
-}
-
-.advantages-list-cards .advantages-item-list .advantages-item-subtitle {
-  color: #000000;
-}
-
-.advantages-item-bridge-devil {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.advantages-birdge-devil {
-  width: 400px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 85px 102px;
-  text-align: center;
-}
 
 .holiday-items {
   width: 504px;
@@ -251,10 +216,19 @@ ul, ol {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.more-reason-item-subtitle {
+  margin: 0;
 }
 
 .more-reason-items-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 385px);
+  margin: 0;
 }
 
 .more-reason-item-list {
@@ -321,13 +295,23 @@ ul, ol {
   line-height: 26px;
 }
 
+.subscribe-form {
+  display: flex;
+}
+
 .subscribe-form input {
   width: 452px;
-  height: 52px;
+  height: 48px;
+  padding: 0;
+  margin: 0;
+}
+
+.subscribe-form input::placeholder {
+  padding-left: 20px;
 }
 
 .subscribe-button {
-  padding: 16px 54px;
+  padding: 15px 54px;
   color: #FFFFFF;
   text-transform: uppercase;
   background-color: #82B3D3;
@@ -342,17 +326,12 @@ ul, ol {
   background-color: #FFFFFF;
   width: 1200px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 40px;
-  padding-bottom: 30px;
-}
-
-.contacts-social-list {
-  width: 142px;
-  display: flex;
-  margin: 0;
-  margin-left: 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  text-align: center;
+  align-items: center;
+  padding: 46px 0 36px 0;
 }
 
 .contacts-phone {
@@ -361,14 +340,89 @@ ul, ol {
   line-height: 40px;
   color: #000000;
   text-decoration: none;
+}
+
+.contacts-social-list {
+  display: flex;
+  justify-content: center;
   margin: 0;
 }
 
-.contacts-logo-link {
-  width: 115px;
-  margin: 0;
-  margin-right: 70px;
+.social-item {
+  margin-right: 27px;
 }
+
+.social-item:last-child {
+  margin-right: 0;
+}
+
+/* Вариант разметки тестовый */
+.social-item-vk::before {
+  background-image: url("../images/vk-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 14px;
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.social-item-vk .social-item-link {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 24px;
+  height: 14px;
+}
+
+.social-item-telegram::before {
+  background-image: url("../images/telegram-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 18px;
+  height: 15px;
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.social-item-telegram .social-item-link {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 18px;
+  height: 15px;
+}
+
+.social-item-youtube::before {
+  background-image: url("../images/youtube-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 22px;
+  height: 17px;
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.social-item-youtube .social-item-link {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 22px;
+  height: 17px;
+}
+
+.contacts-logo-link {
+  background-image: url("../images/htmlacademy-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 115px;
+  height: 33px;
+  margin: 0 auto;
+}
+/* Вариант разметки тестовый */
 
 /* Main catalog */
 

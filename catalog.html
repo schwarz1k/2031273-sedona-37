@@ -234,38 +234,41 @@
         </div>
       </section>
       <div class="subscribe">
-        <div class="subscribe-items">
-          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="subscribe-email">Email</label>
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <!-- Правильно ли я сверстал рассылку? -->
+          <label for="subscribe-email">
             <input required type="email" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-mail">
-            <button class="subscribe-button" type="submit">Подписаться</button>
-          </form>
-        </div>
-      </div>
+          </label>
+          <!-- Правильно ли я сверстал рассылку? -->
+          <!-- Кнопка больше инпута -->
+          <button class="subscribe-button" type="submit">Подписаться</button>
+          <!-- Кнопка больше инпута -->
+        </form>
+    </div>
     </main>
     <footer class="page-footer">
       <ul class="contacts-social-list" aria-label="Социальные сети">
-        <li class="social-item">
-          <a class="social-item-link social-item-vk" href="https://vk.com/htmlacademy">
+        <li class="social-item social-item-vk">
+          <a class="social-item-link" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">VK</span>
           </a>
         </li>
-        <li class="social-item">
-          <a class="social-item-link social-item-telegram" href="https://t.me/htmlacademy">
+        <li class="social-item social-item-telegram">
+          <a class="social-item-link" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Telegram</span>
           </a>
         </li>
-        <li class="social-item">
-          <a class="social-item-link social-item-youtube" href="https://www.youtube.com/user/htmlacademyru">
+        <li class="social-item social-item-youtube">
+          <a class="social-item-link" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>
       <a class="contacts-phone" href="tel:+78128121222">+7 (812) 812-12-12</a>
       <a class="contacts-logo-link" href="https://htmlacademy.ru/">
-        <img class="contacts-logo-img" alt="Логотип HTML Academy" src="images/htmlacademy-logo.svg">
+        <span class="visually-hidden">Логотип HTML Academy</span>
       </a>
     </footer>
   </body>
