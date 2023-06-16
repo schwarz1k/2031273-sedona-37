@@ -155,6 +155,10 @@ ul, ol {
   text-align: center;
 }
 
+.advantages-items-list span {
+  display: block;
+}
+
 .advantages-list-real-city-img,
 .advantages-list-bridge-devil-img {
   grid-column: span 2;
