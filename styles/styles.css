@@ -972,7 +972,6 @@ input[type="number"] {
   background-repeat: no-repeat;
   background-position: right;
   background-position-x: calc(100% - 20px);
-  color: #333333;
   font-size: 18px;
   line-height: 21px;
 }
