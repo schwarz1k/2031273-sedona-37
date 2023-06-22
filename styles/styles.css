@@ -1041,7 +1041,7 @@ input[type="number"] {
   padding: 17px 16px;
 }
 
-/* Карточки отелей */
+/* Cards hotels */
 .hotels-card-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);
@@ -1204,9 +1204,9 @@ input[type="number"] {
   margin-bottom: 40px;
 }
 
-/* Карточки отелей */
+/* Cards Hotel */
 
-/* Пагинация */
+/* Pagination */
 
 .pagination-block {
   margin-bottom: 61px;
@@ -1286,5 +1286,5 @@ input[type="number"] {
   background-color: #e6e6e6;
 }
 
-/* Пагинация */
+/* Pagination */
 /* Main catalog */
