@@ -408,45 +408,34 @@ ul, ol {
   margin: 0;
 }
 
-.more-reason-picture-house {
-  display: block;
-  background-image: url('../images/house.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 75px;
-  height: 72px;
-  margin: auto;
-  margin-bottom: 30px;
-}
-
-.more-reason-picture-food {
-  display: block;
-  background-image: url('../images/food.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 75px;
-  height: 72px;
-  margin: auto;
-  margin-bottom: 30px;
-}
-
-.more-reason-picture-souvenir {
-  display: block;
-  background-image: url('../images/surprise.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 75px;
-  height: 72px;
-  margin: auto;
-  margin-bottom: 30px;
-}
-
 .more-reason-item-title {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 30px;
+}
+
+.more-reason-item-title::before {
+  box-sizing: border-box;
+  content: "";
+  background-image: url(../images/house.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: block;
+  width: 75px;
+  height: 72px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.picture-food::before {
+  background-image: url(../images/food.svg);
+}
+
+.picture-souvenir::before {
+  background-image: url(../images/surprise.svg);
 }
 
 .more-reason-item-subtitle {
