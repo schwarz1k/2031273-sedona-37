@@ -859,6 +859,8 @@ ul, ol {
   padding: 12px 42px 12px 22px;
   width: 79px;
   margin: 0;
+  font-family: "PT Sans";
+  font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
@@ -925,6 +927,7 @@ input[type="number"] {
   background-color: #82B3D3;
   border-radius: 4px;
   border: none;
+  font-family: "PT Sans";
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -974,6 +977,8 @@ input[type="number"] {
   background-position-x: calc(100% - 20px);
   font-size: 18px;
   line-height: 21px;
+  font-family: "PT Sans";
+  font-style: normal;
 }
 
 .hotels-find-list {
