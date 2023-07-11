@@ -231,7 +231,8 @@ ul, ol {
 }
 
 .navigation-button:disabled {
-  background-color: #e5e5e5;
+  background-color: rgba(229, 229, 229, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 /* Header */
@@ -507,9 +508,24 @@ ul, ol {
   font-family: "PT Sans";
 }
 
+.search-hotels-button:hover,
+.search-hotels-button:focus {
+  background-color: #615048;
+}
+
+.search-hotels-button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search-hotels-button:disabled {
+  background-color: rgba(229, 229, 229, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
 .subscribe {
   text-align: center;
-  padding: 97px 70px 104px 70px;
+  padding: 96px 70px 103px 70px;
 }
 
 .subscribe-index {
@@ -589,6 +605,21 @@ ul, ol {
   font-weight: 700;
 }
 
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.subscribe-button:active {
+  background-color: rgba(130, 179, 211, 1);
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.subscribe-button:disabled {
+  background-color: rgba(229, 229, 229, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
 /* Main */
 
 /* Footer */
@@ -599,9 +630,9 @@ ul, ol {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  padding: 40px 70px 40px 70px;
+  padding: 40px 70px 30px 70px;
+  min-height: 120px;
   box-sizing: border-box;
-  gap: 5px;
 }
 
 .social-item-link {
@@ -647,6 +678,7 @@ ul, ol {
   height: 100%;
 }
 
+/* Не могу свести номер в футере под пиксель перфект */
 .contacts-phone {
   text-decoration: none;
   font-weight: 400;
@@ -656,6 +688,7 @@ ul, ol {
   text-transform: uppercase;
   color: #000000;
 }
+/* Не могу свести номер в футере под пиксель перфект */
 
 .contacts-phone:hover {
   color: #756157;
@@ -782,6 +815,18 @@ ul, ol {
   text-decoration: none;
 }
 
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 /* Хлебные крошки */
 
 /* Фильтр отелей */
@@ -855,13 +900,28 @@ ul, ol {
   color: #000000;
 }
 
+.control-input-price:hover {
+  background: #e6e6e6;
+}
+
 .from {
   border-radius: 4px 0 0 4px;
   border: none;
 }
+
+.from:focus {
+  outline: 3px solid #83b3d3;
+  border-radius: 4px 0 0 4px;
+}
+
 .to {
   border-radius: 0 4px 4px 0;
   border: none;
+}
+
+.to:focus {
+  outline: 3px solid #83b3d3;
+  border-radius: 0 4px 4px 0;
 }
 
 .input-price-text {
@@ -923,9 +983,43 @@ input[type="number"] {
   cursor: pointer;
 }
 
+.hotels-sedona-filter-button:hover:not(:last-child),
+.hotels-sedona-filter-button:focus:not(:last-child) {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.hotels-sedona-filter-button:active:not(:last-child) {
+  background-color: rgba(130, 179, 211, 1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hotels-sedona-filter-button:disabled:not(:last-child) {
+  background-color: rgba(229, 229, 229, 1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .hotels-sedona-filter-button:last-child {
   padding: 8px 50px;
   background: transparent;
+}
+
+.hotels-sedona-filter-button:last-child:hover {
+  color: rgba(255, 255, 255, 1);
+  opacity: 0.6000000238418579;
+}
+
+.hotels-sedona-filter-button:last-child:focus {
+  color: rgba(255, 255, 255, 1);
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.hotels-sedona-filter-button:last-child:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hotels-sedona-filter-button:last-child:disabled {
+  color: rgba(255, 255, 255, 1);
 }
 
 /* Фильтр отелей */
@@ -968,6 +1062,20 @@ input[type="number"] {
   line-height: 21px;
   font-family: "PT Sans";
   font-style: normal;
+}
+
+.select-control-find:hover {
+  border: 2px solid #68a2ca;
+}
+
+.select-control-find:focus {
+  outline: none;
+  border: 2px solid #3f5e72;
+}
+
+.select-control-find:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .hotels-find-list {
@@ -1105,7 +1213,13 @@ input[type="number"] {
 }
 
 .hotels-card-link:active {
+  background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.hotels-card-link:disabled {
+  background-color: rgba(229, 229, 229, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .hotels-sedona-card-button {
@@ -1130,10 +1244,12 @@ input[type="number"] {
 
 .hotels-sedona-card-button:active {
   background-color: rgba(130, 179, 211, 1);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotels-sedona-card-button:disabled {
   background-color: rgba(229, 229, 229, 1);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotels-sedona-card-button-current {
