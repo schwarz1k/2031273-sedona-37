@@ -528,11 +528,6 @@ ul, ol {
   padding: 96px 70px 103px 70px;
 }
 
-.subscribe-index {
-  background-image: url("../images/background-subscribe.jpg");
-  background-size: cover;
-  background-color: rgba(11, 107, 136, 0.726);
-}
 
 .subscribe span {
   display: block;
@@ -540,6 +535,12 @@ ul, ol {
 
 .subscribe {
   background-color: rgba(255, 255, 255, 1);
+}
+
+.subscribe-index {
+  background-image: url("../images/background-subscribe.jpg");
+  background-size: cover;
+  background-color: rgba(11, 107, 136, 0.726);
 }
 
 .subscribe-title {
