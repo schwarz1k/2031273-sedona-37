@@ -754,6 +754,331 @@ ul, ol {
 }
 /* Footer */
 
+/* Modal */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.80);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-window {
+  position: relative;
+  width:717px;
+  padding: 64px 70px;
+  border-radius: 30px;
+  background-color: #FFFFFF;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+}
+
+.modal-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap:48px;
+}
+
+.modal-header {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  margin:0;
+  margin-bottom:64px;
+}
+
+.modal-close-button {
+  position:absolute;
+  right: 52px;
+  top: 64px;
+  width: 52px;
+  height: 52px;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  appearance: none;
+  border:none;
+  background-image: url('../images/cross.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  padding:16px 16px;
+}
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus{
+  outline: 3px solid #83B3D3;
+  outline-offset: 0;
+}
+
+.modal-close-button:active{
+  opacity:0.3;
+}
+
+.checkin-title,
+.checkout-title {
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #000000;
+}
+
+.check-in-row,
+.check-out-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.checkin-title {
+  width: 113px;
+  margin-right: 24px;
+}
+
+.checkout-title {
+  width: 119px;
+  margin-right: 18px;
+}
+
+.check-in-date,
+.check-out-date {
+  appearance: none;
+  border:none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  width: 440px;
+  padding:12px 20px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  background-image: url('../images/calendar.svg');
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  cursor:pointer;
+}
+
+.check-in-date:hover,
+.check-out-date:hover {
+background-color: #E6E6E6;
+}
+
+.check-in-date:focus,
+.check-out-date:focus {
+  border:none;
+  outline: 3px solid #83B3D3;
+  outline-offset: 0;
+  background-color: #E6E6E6;
+}
+
+.check-in-error {
+  color: #FF5757;
+  font-size: 16px;
+  line-height: 21px;
+  margin-left: 157px;
+  margin-top:4px;
+}
+
+.check-out-text {
+  color: #333333;
+  font-size: 16px;;
+  line-height: 21px;
+  margin-left: 157px;
+  margin-top:4px;
+}
+
+.count-container {
+  display: flex;
+}
+
+.people-count {
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #000000;
+}
+
+.adult {
+  margin-right:46px;
+}
+
+.child {
+  padding-right:10px;
+  margin-right:72px;
+}
+
+.persons-number {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  cursor: pointer;
+  width:31px;
+  height:48px;
+  border:none;
+  outline:none;
+  background-color: #F2F2F2;
+  text-align: center;
+}
+
+.count-plus {
+  margin-right:88px;
+  border-radius: 0 4px 4px 0;
+}
+
+.count-minus {
+  border-radius: 4px 0 0 4px;
+}
+
+.count-minus,
+.count-plus {
+  width:40px;
+  height: 48px;
+  display:inline-block;
+  cursor: pointer;
+  appearance: none;
+  border:none;
+  background-color: #F2F2F2;
+  outline:none;
+}
+
+.minus-image,
+.plus-image {
+opacity:0.3;
+}
+
+.count-minus:hover .minus-image,
+.count-plus:hover .plus-image {
+  opacity:1;
+  fill:black
+}
+
+.count-plus:focus .plus-image,
+.count-minus:focus .minus-image {
+  opacity:1;
+  fill:black;
+  outline: 3px solid #83B3D3;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.count-plus:active .plus-image,
+.count-minus:active .minus-image {
+  opacity:0.3;
+  outline: none;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip-toggle {
+  width: 26px;
+  height: 26px;
+  appearance: none;
+  border:none;
+  outline:none;
+  border-radius: 50%;
+  display:block;
+  background-color: #83B3D3;
+  position: absolute;
+  top: 10px;
+  left: -72px;
+  background-image: url('../images/info.svg');
+  background-repeat: no-repeat;
+  background-position: center, center;
+  cursor: pointer;
+  padding:0;
+  margin:0;
+}
+
+.tooltip-toggle:focus {
+  border:none;
+  outline: 3px solid #83B3D3;
+  outline-offset: 0;
+}
+
+.tooltip-text {
+  display:none;
+  width: 256px;
+  border-radius: 10px;
+  background-color: #333333;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 20px;
+  padding:15px 18px 18px 22px;
+  position: absolute;
+  top: 52px;
+  right:-70px;
+  z-index: 1;
+}
+
+.tooltip-text::before {
+  content:'';
+  display: block;
+  height: 9px;
+  width: 19px;
+  background-image: url('../images/triangle.svg');
+  background-repeat: no-repeat;
+  transform: translate(95px, -24px);
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.modal-search-button {
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: inherit;
+  width: 100%;
+  color: #FFFFFF;
+  padding: 18px 77px;
+  border:none;
+  border-radius: 10px;
+  background-color: #83B3D3;
+  text-align: center;
+  cursor: pointer;
+  display:inline-block;
+  outline: none;
+}
+
+.modal-search-button:hover,
+.modal-search-button:focus {
+background-color: #68A2CA;
+}
+
+.modal-search-button:active {
+  background-color: #68A2CA;
+  opacity:0.3;
+  }
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+/* Modal */
+
 /* Main catalog */
 
 .main-catalog {
@@ -1257,15 +1582,15 @@ input[type="number"] {
 }
 
 .hotels-find-link-tiles {
-  background-image: url('../images/catalog-direction/catalog-direction-icon-1.svg');
+  background-image: url('../images/catalog-direction/catalog-direction-tiles.svg');
 }
 
 .hotels-find-link-full {
-  background-image: url('../images/catalog-direction/catalog-direction-icon-2.svg');
+  background-image: url('../images/catalog-direction/catalog-direction-full.svg');
 }
 
 .hotels-find-link-list {
-  background-image: url('../images/catalog-direction/catalog-direction-icon-3.svg');
+  background-image: url('../images/catalog-direction/catalog-direction-list.svg');
 }
 
 /* Cards hotels */
