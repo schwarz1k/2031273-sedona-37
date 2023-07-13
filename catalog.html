@@ -59,21 +59,24 @@
                 <legend class="hotels-sedona-filter-title">Инфраструктура:</legend>
                 <ul class="hotels-sedona-filter-list">
                   <li class="hotels-sedona-filter-item">
-                    <label class="control-label-infra">
-                        <input class="control-input-infra" type="checkbox" name="swimming-pool" checked>
-                        Бассейн
+                    <label class="control">
+                        <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="hotels-sedona-filter-item">
-                    <label class="control-label-infra">
-                        <input class="control-input-infra" type="checkbox" name="parking" checked>
-                        Парковка
+                    <label class="control">
+                        <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="hotels-sedona-filter-item">
-                    <label class="control-label-infra">
-                        <input class="control-input-infra" type="checkbox" name="wi-Fi">
-                        Wi-Fi
+                    <label class="control">
+                        <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -82,21 +85,24 @@
               <legend class="hotels-sedona-filter-title">Тип Жилья:</legend>
                 <ul class="hotels-sedona-filter-list">
                   <li class="hotels-sedona-filter-item">
-                    <label class="control-label-house">
-                        <input class="control-input-house" type="radio" name="housing" value="Hotel" checked>
-                        Гостиница
+                    <label class="control">
+                        <input class="visually-hidden control-input" type="radio" name="housing" value="hotel" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="hotels-sedona-filter-item">
-                    <label class="control-label-house">
-                        <input class="control-input-house" type="radio" name="housing" value="Motel">
-                        Мотель
+                    <label class="control">
+                        <input class="visually-hidden control-input" type="radio" name="housing" value="motel">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="hotels-sedona-filter-item">
-                    <label class="control-label-house">
-                        <input class="control-input-house" type="radio" name="housing" value="Apartment">
-                        Апартаменты
+                    <label class="control">
+                        <input class="visually-hidden control-input" type="radio" name="housing" value="apartment">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
@@ -115,7 +121,19 @@
                 </div>
                 <div class="hotels-sedona-slider-price">
                   <span class="visually-hidden">Ползунок для изменения цены</span>
-                  <input class="slider-input-price" type="range" min="0" max="100" value="80" id="hotels-sedona-filter-slider">
+                  <div class="range">
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 0; width: 226px;">
+                        <button type="button" class="range-toggle toggle-min">
+                          <span class="visually-hidden">Изменить минимальную цену</span>
+                        </button>
+                        <button type="button" class="range-toggle toggle-max">
+                          <span class="visually-hidden">Изменить максимальную цену</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <input class="slider-input-price" type="range" min="0" max="100" value="80" id="hotels-sedona-filter-slider"> -->
                 </div>
               </fieldset>
               <div class="hotels-sedona-filter-button-container">
