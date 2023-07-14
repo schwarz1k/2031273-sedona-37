@@ -718,12 +718,14 @@ ul, ol {
 
 .contacts-social-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   margin: 0;
 }
 
 .contacts-logo-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
   box-sizing: border-box;
