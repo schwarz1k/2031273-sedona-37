@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico">
   </head>
   <body>
     <div class="page-container">
@@ -44,16 +43,15 @@
         </nav>
       </header>
       <main class="main-page" data-test="main">
-        <div class="background-index" data-test="hero">
-          <img class="background-index-img" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" src="images/welcome.svg" width="458" height="352">
-        </div>
-        <div class="advantages-container" data-test="advantages">
-        <section class="reason-items">
-            <h1 class="visually-hidden">Преимущества Седоны</h1>
-            <p class="reason-item-title">Седона — небольшой городок в Аризоне, <span>заслуживающий большего!</span></p>
-            <p class="reason-item-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-        </section>
-        <section class="advantages-items">
+          <div class="background-index" data-test="hero">
+            <img class="background-index-img" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" src="images/welcome.svg" width="458" height="352">
+          </div>
+          <section class="reason-items">
+              <h1 class="visually-hidden">Преимущества Седоны</h1>
+              <p class="reason-item-title">Седона — небольшой городок в Аризоне, <span>заслуживающий большего!</span></p>
+              <p class="reason-item-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </section>
+        <section class="advantages-items" data-test="advantages">
           <h2 class="visually-hidden">Причины, по которым выбирают Седону</h2>
           <ul class="advantages-items-list">
             <li class="advantages-item-list advantages-list-real-city">
@@ -84,7 +82,6 @@
             </li>
           </ul>
         </section>
-        </div>
         <div class="service-container" data-test="service">
         <section class="holiday-items">
           <h2 class="visually-hidden">Отдых в Седоне</h2>
@@ -152,8 +149,8 @@
             </a>
           </div>
         </footer>
-        <dialog class="dialog">
-          <div class="modal-container">
+        <dialog class="dialog" open>
+          <div class="modal-container" data-test="modal">
             <div class="modal-window">
               <h2 class="modal-header">Поиск гостиницы в Седоне</h2>
               <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">

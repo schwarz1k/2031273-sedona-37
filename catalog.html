@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
   <body>
     <div class="page-container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <a class="header-logo" href="index.html">
           <img class="logo-picture" src="images/logo.svg" alt="Логотип сайта по поиску гостиницы в Седоне" width="140" height="70">
         </a>
@@ -41,7 +42,7 @@
           </div>
         </nav>
       </header>
-      <main class="main-page">
+      <main class="main-page" data-test="main">
         <section class="hotels-sedona">
             <h1 class="hotels-sedona-title">Гостиницы Седоны</h1>
             <ol class="breadcrumbs">
@@ -54,7 +55,7 @@
                 <a class="breadcrumbs-link" href="#" aria-current="page">Гостиницы</a>
               </li>
             </ol>
-            <form class="hotels-sedona-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <form class="hotels-sedona-filter" data-test="filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="hotels-sedona-filter-group hotels-sedona-filter-infrastructure">
                 <legend class="hotels-sedona-filter-title">Инфраструктура:</legend>
                 <ul class="hotels-sedona-filter-list">
@@ -141,6 +142,7 @@
               </div>
             </form>
         </section>
+        <div class="catalog" data-test="catalog">
         <section class="hotels-find">
           <div class="hotels-find-sorting">
             <h2 class="hotels-find-title">Найдено гостиниц: <span class="hotels-find-nubmer">38</span></h2>
@@ -223,7 +225,6 @@
                 </div>
                 <p class="rating-value">Рейтинг: 5,0</p>
               </li>
-
             </ul>
             <span class="strip" aria-hidden="true"></span>
             <h2 class="visually-hidden">Пагинация</h2>
@@ -250,7 +251,8 @@
             </ol>
           </div>
         </section>
-        <div class="subscribe">
+        </div>
+        <div class="subscribe" data-test="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-subtitle">Только полезная информация и никакого спама, <span>честное бойскаутское!</span></p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -261,7 +263,7 @@
           </form>
         </div>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <ul class="contacts-social-list" aria-label="Социальные сети">
           <li class="social-item">
             <a class="social-item-link social-item-vk" href="https://vk.com/htmlacademy">
