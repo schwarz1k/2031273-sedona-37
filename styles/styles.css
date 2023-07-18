@@ -73,7 +73,7 @@ body {
 }
 
 .catalog-logo:hover,
-.catalog-logo:focus {
+.catalog-logo:focus-visible {
   opacity: 60%;
 }
 
@@ -141,7 +141,7 @@ body {
 }
 
 .navigation-link:not(.current-link):hover,
-.navigation-link:not(.current-link):focus {
+.navigation-link:not(.current-link):focus-visible {
   background-color: #f2f2f2;
 }
 
@@ -171,7 +171,7 @@ body {
 }
 
 .navigation-link-user:hover,
-.navigation-link-user:focus {
+.navigation-link-user:focus-visible {
   background-color: #f2f2f2;
 }
 
@@ -217,7 +217,7 @@ body {
 }
 
 .navigation-button:hover,
-.navigation-button:focus {
+.navigation-button:focus-visible {
   background-color: #615048;
 }
 
@@ -519,7 +519,7 @@ body {
 }
 
 .search-hotels-button:hover,
-.search-hotels-button:focus {
+.search-hotels-button:focus-visible {
   background-color: #615048;
 }
 
@@ -584,11 +584,11 @@ body {
 }
 
 .subscribe-form input:hover,
-.subscribe-form input:focus {
+.subscribe-form input:focus-visible {
   border: solid 3px #83B3D3;
 }
 
-.subscribe-form input:focus {
+.subscribe-form input:focus-visible {
   outline: none;
 }
 
@@ -608,7 +608,7 @@ body {
 }
 
 .subscribe-button:hover,
-.subscribe-button:focus {
+.subscribe-button:focus-visible {
   background-color: rgba(104, 162, 202, 1);
 }
 
@@ -700,7 +700,7 @@ body {
 }
 
 .contacts-phone:hover,
-.contacts-phone:focus {
+.contacts-phone:focus-visible {
   color: rgba(117, 97, 87, 1);
 }
 
@@ -733,7 +733,7 @@ body {
   fill: #756157;
 }
 
-.contacts-logo-img:focus path {
+.contacts-logo-img:focus-visible path {
   fill: #756157;
 }
 
@@ -813,19 +813,24 @@ body {
   background-color: #E6E6E6;
 }
 
+.modal-close-button:focus-visible {
+  background-color: #E6E6E6;
+  border: solid 3px #83B3D3;
+}
+
 .modal-close-button:active {
   background-color: #E6E6E6;
   border: 3px solid transparent;
 }
 
-.modal-close-button:focus {
-  background-color: #E6E6E6;
-  border: solid 3px #83B3D3;
+.modal-close-button:active::before,
+.modal-close-button:active::after {
+  opacity: 30%;
 }
 
-.modal-close-button:hover::before,
+/* .modal-close-button:hover::before,
 .modal-close-button:hover::after {
-  opacity: 0,3;
+  opacity: 30%;
 }
 
 .modal-close-button:disabled {
@@ -834,8 +839,8 @@ body {
 
 .modal-close-button:disabled::before,
 .modal-close-button:disabled::after {
-  opacity: 0,3;
-}
+  opacity: 30%;
+} */
 
 .modal-title {
   font-weight: 700;
@@ -879,7 +884,7 @@ body {
 }
 
 .search-button:hover,
-.search-button:focus {
+.search-button:focus-visible {
   background-color: #68a2ca;
 }
 
@@ -911,7 +916,7 @@ body {
 }
 
 .calendar:hover,
-.calendar:focus {
+.calendar:focus-visible {
   background-color: #e6e6e6;
 }
 
@@ -981,9 +986,9 @@ body {
 }
 
 .less:hover,
-.less:focus,
+.less:focus-visible,
 .more:hover,
-.more:focus {
+.more:focus-visible {
   fill: #000000;
   fill-opacity: 1;
 }
@@ -1070,7 +1075,7 @@ body {
 }
 
 .button-tooltip:hover + .tooltip-text,
-.button-tooltip:focus + .tooltip-text {
+.button-tooltip:focus-visible + .tooltip-text {
   display: block;
 }
 
@@ -1136,7 +1141,7 @@ body {
 }
 
 .breadcrumbs-link-home:hover,
-.breadcrumbs-link-home:focus {
+.breadcrumbs-link-home:focus-visible {
   opacity: 60%;
 }
 
@@ -1159,7 +1164,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.breadcrumbs-link:focus {
+.breadcrumbs-link:focus-visible {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -1256,7 +1261,7 @@ body {
   border: none;
 }
 
-.from:focus {
+.from:focus-visible {
   outline: 3px solid #83b3d3;
   border-radius: 4px 0 0 4px;
   position: relative;
@@ -1268,7 +1273,7 @@ body {
   border: none;
 }
 
-.to:focus {
+.to:focus-visible {
   outline: 3px solid #83b3d3;
   border-radius: 0 4px 4px 0;
   position: relative;
@@ -1355,7 +1360,7 @@ body {
   content: "";
 }
 
-.control-input:not(:disabled):focus + .control-mark {
+.control-input:not(:disabled):focus-visible + .control-mark {
   outline: 3px solid #81b2d2;
 }
 
@@ -1453,7 +1458,7 @@ input[type="number"] {
 }
 
 .hotels-sedona-filter-button:hover:not(:last-child),
-.hotels-sedona-filter-button:focus:not(:last-child) {
+.hotels-sedona-filter-button:focus-visible:not(:last-child) {
   background-color: #68A2CA;
 }
 
@@ -1467,25 +1472,24 @@ input[type="number"] {
   color: #FFFFFF4D;
 }
 
-.hotels-sedona-filter-button:last-child {
+.reset {
   background: none;
 }
 
-.hotels-sedona-filter-button:last-child:hover {
+.reset:hover {
   color: #FFFFFF99;
 }
 
-.hotels-sedona-filter-button:last-child:active {
+.reset:focus-visible {
+  color: rgba(255, 255, 255, 1);
+  border: none;
+}
+
+.reset:active {
   color: #FFFFFF4D;
 }
 
-.hotels-sedona-filter-button:last-child:focus {
-  color: rgba(255, 255, 255, 1);
-  border: 3px solid #83B3D3;
-  border-radius: 4px;
-}
-
-.hotels-sedona-filter-button:last-child:disabled {
+.reset:disabled {
   color: #FFFFFF;
   opacity: 10%;
 }
@@ -1542,7 +1546,7 @@ input[type="number"] {
   border: 2px solid #68a2ca;
 }
 
-.select-control-find:focus {
+.select-control-find:focus-visible {
   outline: none;
   border: 2px solid #68a2ca;
 }
@@ -1680,7 +1684,7 @@ input[type="number"] {
 }
 
 .hotels-card-link:hover,
-.hotels-card-link:focus {
+.hotels-card-link:focus-visible {
   background-color: #615048;
 }
 
@@ -1711,8 +1715,9 @@ input[type="number"] {
 }
 
 .hotels-sedona-card-button:hover,
-.hotels-sedona-card-button-current:focus {
+.hotels-sedona-card-button-current:focus-visible {
   background-color: rgba(104, 162, 202, 1);
+  border: none;
 }
 
 .hotels-sedona-card-button:active {
@@ -1730,7 +1735,7 @@ input[type="number"] {
 }
 
 .hotels-sedona-card-button-current:hover,
-.hotels-sedona-card-button-current:focus {
+.hotels-sedona-card-button-current:focus-visible {
   background-color: #6c9e42;
 }
 
@@ -1838,7 +1843,7 @@ input[type="number"] {
 }
 
 .pagination-link:hover,
-.pagination-link:focus {
+.pagination-link:focus-visible {
   background-color: #82B3D3;
 }
 
@@ -1860,7 +1865,7 @@ input[type="number"] {
 }
 
 .pagination-link-next:hover,
-.pagination-link-next:focus {
+.pagination-link-next:focus-visible {
   background-color: #68a2ca;
 }
 
