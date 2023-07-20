@@ -257,6 +257,20 @@ body {
   padding: 50px 70px 79px;
   min-width: 1200px;
   min-height: 485px;
+  position: relative;
+}
+
+.background-index::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/flag.svg');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .background-index-img {
@@ -1163,6 +1177,7 @@ body {
 .hotels-sedona-filter {
   display: flex;
   flex-wrap: wrap;
+  justify-content: end;
 }
 
 .hotels-sedona-title {
