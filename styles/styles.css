@@ -346,12 +346,14 @@ body {
   grid-column-end: 4;
 }
 
-.advantages-list-bridge-devil .advantages-item-img {
+.advantages-list-bridge-devil
+.advantages-item-img {
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
-.advantages-list-bridge-devil .advantages-items-text-сontainer {
+.advantages-list-bridge-devil
+.advantages-items-text-сontainer {
   grid-column-start: 3;
   grid-column-end: 4;
 }
@@ -400,7 +402,8 @@ body {
   transform: translate(-50%);
 }
 
-.advantages-items-text-сontainer .advantages-item-title::after {
+.advantages-items-text-сontainer
+.advantages-item-title::after {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
